@@ -1,5 +1,21 @@
 {
+    "version": "2.0.0",
     "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "/property:GenerateFullPaths=true",
+                "/t:build",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
         {
             "type": "shell",
             "label": "C/C++: gcc.exe build active file",
@@ -21,14 +37,10 @@
                 "isDefault": true
             },
             "presentation": {
-                "echo": true,
                 "reveal": "always",
-                "focus": false,
-                "panel": "new", 
-                "showReuseMessage": true,
-                "clear": false
-            }
+                "panel": "dedicated",
+                "echo": true
+            },        
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
