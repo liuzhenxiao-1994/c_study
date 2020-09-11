@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 void main()
 {
@@ -14,7 +15,7 @@ void main()
         printf("true");
         return;
     }
-    for (int i = 2; i < m; i++)
+    for (int i = 2; i <= sqrt(m) ; i++)
     {
         if (m % i == 0)
         {

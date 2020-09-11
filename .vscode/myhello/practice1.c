@@ -13,7 +13,7 @@ void main()
                 {
                     printf("%d", i * 100 + j * 10 + k);
                     printf("\n");
-                    count++;git 
+                    count++;
                 }
             }
         }
